@@ -20,6 +20,9 @@ export default async function Navbar() {
                 {session && (
                     <li><Link href="/api/auth/signout">Sign Out</Link></li>
                 )}
+                {session && (
+                    <li><Link href="/profile">Profile</Link></li>
+                )}
                 <li><Link href="/server">Server</Link></li>
                 <li><Link href="/client">Client</Link></li>
                 <li><Link href="/extra">Extra</Link></li>
