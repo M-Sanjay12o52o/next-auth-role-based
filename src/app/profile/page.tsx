@@ -8,7 +8,7 @@ interface pageProps {
 
 }
 
-const page: FC<pageProps> = ({ }) => {
+const ProfilePage: FC<pageProps> = ({ }) => {
     const { data: session } = useSession({
         required: true,
         onUnauthenticated() {
@@ -41,4 +41,4 @@ const page: FC<pageProps> = ({ }) => {
     </div>
 }
 
-export default page
+export default ProfilePage
